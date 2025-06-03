@@ -1,93 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dr. Alok Raj | Academic Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
-  <script src="scripts.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Alok Raj - Academic Portfolio</title>
+    <meta name="description" content="Dr. Alok Raj - Postdoctoral Researcher specializing in Environmental Science, Remote Sensing, and Geospatial Technology">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#publications">Publications</a></li>
-      <li><a href="#media">Media</a></li>
-      <li><a href="#profiles">Profiles</a></li>
-    </ul>
-  </nav>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Dr. Alok Raj</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#research" class="nav-link">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#publications" class="nav-link">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#awards" class="nav-link">Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
 
-  <header>
-    <section id="home">
-      <h1>Dr. Alok Raj</h1>
-      <img src="photo.jpg" alt="Dr. Alok Raj" style="width:200px; border-radius:10px; margin:20px 0;">
-      <p>"As time progresses, your discipline, honesty, consistency, and humbleness take you towards perfection with a soul of infinite potential."</p>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Dr. Alok Raj</h1>
+                    <h2 class="hero-subtitle">Postdoctoral Young Professional</h2>
+                    <p class="hero-affiliation">SLCR Lab, Department of Civil Engineering<br>IIT BHU, Varanasi</p>
+                    <p class="hero-description">
+                        Specializing in Environmental Science, Remote Sensing, Geospatial Technology, 
+                        and Climate Change Studies with focus on sustainable development and ecological assessment.
+                    </p>
+                    <div class="hero-quote">
+                        <blockquote>
+                            "As time progresses, your discipline, honesty, consistency, and humbleness take you 
+                            towards perfection with a soul of infinite potential."
+                            <cite>~ Alok Raj</cite>
+                        </blockquote>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="assets/cv.pdf" download class="btn btn-secondary">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-  </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Postdoctoral Researcher at IIT BHU | Environmental Scientist | Remote Sensing & Geospatial Expert</p>
-    <ul>
-      <li><strong>Phone:</strong> +91 8083505398</li>
-      <li><strong>Email:</strong> alokraj3300@live.in</li>
-      <li><strong>Location:</strong> Varanasi, India</li>
-    </ul>
-  </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I am a dedicated researcher with expertise in environmental science, geospatial technology, 
+                        and climate change studies. Currently serving as a Postdoctoral Young Professional at IIT BHU, 
+                        I focus on developing innovative solutions for environmental challenges through cutting-edge research.
+                    </p>
+                    
+                    <div class="research-interests">
+                        <h3>Research Interests</h3>
+                        <div class="interests-grid">
+                            <div class="interest-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Geospatial Technology</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-leaf"></i>
+                                <span>Ecology & Sustainability</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-cloud-sun"></i>
+                                <span>Climate Science</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Machine Learning & AI</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-satellite"></i>
+                                <span>Remote Sensing & GIS</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Big-Earth Data Analysis</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-seedling"></i>
+                                <span>Sustainable Development</span>
+                            </div>
+                            <div class="interest-item">
+                                <i class="fas fa-microscope"></i>
+                                <span>Environmental Engineering</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <h4>27+</h4>
+                        <p>Research Publications</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>5+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>8</h4>
+                        <p>International Articles</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>3</h4>
+                        <p>Major Awards</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="education">
-    <h2>Academic Qualifications</h2>
-    <ul>
-      <li>Ph.D. in Environmental Science – Central University of Rajasthan (2023)</li>
-      <li>M.Sc. in Environmental Science – CUSB (2018)</li>
-      <li>B.Sc. Physics (Hons) – Magadh University (2016)</li>
-      <li>Advance Diploma in Computer Applications – Magadh University</li>
-    </ul>
-  </section>
+    <!-- Experience & Education Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="exp-edu-grid">
+                <div class="experience-section">
+                    <h2 class="section-title">Professional Experience</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Postdoctoral Young Professional</h3>
+                                <h4>IIT BHU, Varanasi</h4>
+                                <p class="timeline-date">May 2025 - Present</p>
+                                <p>SLCR Lab under NMCH project (Decision Support System for Cleaning Ganga), Department of Civil Engineering</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Research Associate</h3>
+                                <h4>DST's Centre for Excellence</h4>
+                                <p class="timeline-date">May 2024 - May 2025</p>
+                                <p>Water Resource, Cryosphere and Climate Change studies in Remote Sensing & Climate Change division</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Postdoctoral SRF</h3>
+                                <h4>IIT Kharagpur</h4>
+                                <p class="timeline-date">Aug 2023 - Mar 2024</p>
+                                <p>Development of Forest Fire Spread Model using Satellite Remote Sensing and CFD in Sikkim Himalayas</p>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <h3>Earth Observation Data Scientist</h3>
+                                <h4>FAO - United Nations</h4>
+                                <p class="timeline-date">Apr 2023 - Jul 2023</p>
+                                <p>Office of Chief Statistician (OCS) - International collaboration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-section">
+                    <h2 class="section-title">Education</h2>
+                    <div class="education-list">
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="education-content">
+                                <h3>Ph.D. Environmental Science</h3>
+                                <h4>Central University of Rajasthan</h4>
+                                <p class="education-date">2018 - 2023</p>
+                                <p class="education-thesis">
+                                    <strong>Thesis:</strong> "Assessment of Eco-sensitivity in the Central Aravalli Region 
+                                    using Geospatial Approach under Changing Climatic Conditions"
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="education-content">
+                                <h3>PG Diploma in International Relations</h3>
+                                <h4>Indian Institute of Leadership and Diplomacy</h4>
+                                <p class="education-date">2023</p>
+                                <p class="education-grade">First Division (80%)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="education-content">
+                                <h3>M.Sc. Environmental Science</h3>
+                                <h4>Central University of South Bihar</h4>
+                                <p class="education-date">2018</p>
+                                <p class="education-grade">First Division (66.5%)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="education-item">
+                            <div class="education-icon">
+                                <i class="fas fa-atom"></i>
+                            </div>
+                            <div class="education-content">
+                                <h3>B.Sc. Physics (Honours)</h3>
+                                <h4>Magadh University</h4>
+                                <p class="education-date">2016</p>
+                                <p class="education-grade">First Division with Distinction (68.68%)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="experience">
-    <h2>Work Experience</h2>
-    <ul>
-      <li><strong>Postdoctoral Young Professional</strong> – IIT BHU</li>
-      <li><strong>Research Associate</strong> – DST Centre for Excellence</li>
-      <li><strong>Postdoc SRF</strong> – IIT Kharagpur (CORAL)</li>
-      <li><strong>Earth Observation Data Scientist</strong> – FAO United Nations</li>
-    </ul>
-  </section>
+    <!-- Research Section -->
+    <section id="research" class="research">
+        <div class="container">
+            <h2 class="section-title">Research Focus</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <h3>Eco-sensitivity Assessment</h3>
+                    <p>Monitoring and assessment of the Aravalli Range using geospatial approaches under changing climatic conditions with 15 distinct environmental indicators.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Forest Fire Modeling</h3>
+                    <p>Development of Forest Fire Spread Models using Satellite Remote Sensing and Computational Fluid Dynamics (CFD) in Sikkim Himalayas.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <h3>Water Resource Management</h3>
+                    <p>Decision Support System for Cleaning Ganga and water resource management using advanced geospatial technologies.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-smog"></i>
+                    </div>
+                    <h3>Air Quality Assessment</h3>
+                    <p>Spatial and temporal variability analysis of air pollutants over sub-humid climatic conditions and their health impact assessment.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Land Degradation Studies</h3>
+                    <p>Land degradation neutrality (LDN) assessment using pressure-state-response models and MODIS data products for sustainable land management.</p>
+                </div>
+                
+                <div class="research-card">
+                    <div class="research-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3>Remote Sensing Applications</h3>
+                    <p>Advanced remote sensing techniques for environmental monitoring, forest health assessment, and sustainable development goal implementations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="skills">
-    <h2>Research Interests & Skills</h2>
-    <p>
-      Geospatial Analysis, Remote Sensing, Climate Science, Environmental Engineering, Deep Learning, Earth Observation, Big-Earth Data, Crop Monitoring, and SDGs.
-    </p>
-    <p><strong>Tools:</strong> GEE, ArcGIS, Q-GIS, Python, R, SNAP, ENVI, Tableau</p>
-  </section>
+    <!-- Publications Section -->
+    <section id="publications" class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications & Research Output</h2>
+            
+            <div class="publication-stats">
+                <div class="pub-stat">
+                    <h3>8</h3>
+                    <p>International Articles</p>
+                </div>
+                <div class="pub-stat">
+                    <h3>1</h3>
+                    <p>National Articles</p>
+                </div>
+                <div class="pub-stat">
+                    <h3>3</h3>
+                    <p>Conference Proceedings</p>
+                </div>
+                <div class="pub-stat">
+                    <h3>6</h3>
+                    <p>Submitted Articles</p>
+                </div>
+                <div class="pub-stat">
+                    <h3>5</h3>
+                    <p>Book Chapters</p>
+                </div>
+            </div>
+            
+            <div class="publications-filter">
+                <button class="filter-btn active" data-filter="all">All Publications</button>
+                <button class="filter-btn" data-filter="international">International</button>
+                <button class="filter-btn" data-filter="scopus">Scopus/SCI</button>
+                <button class="filter-btn" data-filter="q1">Q1 Journals</button>
+            </div>
+            
+            <div class="publications-list">
+                <div class="publication-item international scopus q1">
+                    <div class="pub-header">
+                        <h3>Spatiotemporal forest health assessment for ecosystem management of Sariska National Park (India)</h3>
+                        <div class="pub-badges">
+                            <span class="badge q1">Q1</span>
+                            <span class="badge if">IF: 4.7</span>
+                        </div>
+                    </div>
+                    <p class="pub-authors">Sharma, L. K., & Raj, Alok. (2024)</p>
+                    <p class="pub-journal">Environment, Development & Sustainability</p>
+                    <p class="pub-details">ISSN: 1573-2975 | Impact Factor: 4.7 | Quartile: Q1</p>
+                    <a href="https://doi.org/10.1007/s10668-024-05100-8" class="pub-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
+                </div>
+                
+                <div class="publication-item international scopus q1">
+                    <div class="pub-header">
+                        <h3>Land degradation neutrality (LDN) in Rajasthan, Western India</h3>
+                        <div class="pub-badges">
+                            <span class="badge q1">Q1</span>
+                            <span class="badge if">IF: 3.0</span>
+                        </div>
+                    </div>
+                    <p class="pub-authors">Raj, Alok., Sharma, L.K., Verma, R., Naik R., Nathawat M.S. & Francaviglia R. (2023)</p>
+                    <p class="pub-journal">Environmental Monitoring and Assessment</p>
+                    <p class="pub-details">ISSN: 0167-6369 | Impact Factor: 3.0 | Q1: Environmental Sciences</p>
+                    <a href="https://doi.org/10.1007/s10661-023-11986-0" class="pub-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
+                </div>
+                
+                <div class="publication-item international scopus q1">
+                    <div class="pub-header">
+                        <h3>Assessment of environmental footprint using geospatial approach for Sustainable Development Goals</h3>
+                        <div class="pub-badges">
+                            <span class="badge q1">Q1</span>
+                            <span class="badge if">IF: 3.0</span>
+                        </div>
+                    </div>
+                    <p class="pub-authors">Sharma, L. K., Aarav, P., Sharma, S., & Raj, Alok*. (2023)</p>
+                    <p class="pub-journal">Natural Resources Forum</p>
+                    <p class="pub-details">ISSN: 1931-3195 | Impact Factor: 3.0 | Q1: Earth Sciences</p>
+                    <a href="#" class="pub-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
+                </div>
+                
+                <div class="publication-item international scopus q1">
+                    <div class="pub-header">
+                        <h3>Spatial E-PSR modelling for ecological sensitivity assessment for arid rangeland resilience</h3>
+                        <div class="pub-badges">
+                            <span class="badge q1">Q1</span>
+                            <span class="badge if">IF: 3.5</span>
+                        </div>
+                    </div>
+                    <p class="pub-authors">Raj, Alok., and Sharma, L. K. (2023)</p>
+                    <p class="pub-journal">Ecological Modelling</p>
+                    <p class="pub-details">ISSN: 1872-7026 | Impact Factor: 3.5 | Q1: Environmental Science</p>
+                    <a href="https://doi.org/10.1016/j.ecolmodel.2023.110283" class="pub-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
+                </div>
+                
+                <div class="publication-item international scopus q1">
+                    <div class="pub-header">
+                        <h3>Eco-biophysical indicators to ascertain sustainability of primitive hills range using MODIS data</h3>
+                        <div class="pub-badges">
+                            <span class="badge q1">Q1</span>
+                            <span class="badge if">IF: 5.6</span>
+                        </div>
+                    </div>
+                    <p class="pub-authors">Raj, Alok., and Sharma, L. K. (2022)</p>
+                    <p class="pub-journal">Ecological Informatics</p>
+                    <p class="pub-details">ISSN: 1574-9541 | Impact Factor: 5.6 | Q1: Modeling and Simulation</p>
+                    <a href="https://doi.org/10.1007/s12145-021-00753-9" class="pub-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i> View Publication
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="publications">
-    <h2>Publications & Achievements</h2>
-    <p>27 publications, including Q1 journals like Ecological Informatics, Environmental Sustainability, and Nature Resource Forum.</p>
-    <p><strong>Awards:</strong> SERB Travel Grant 2024, Best Paper Award, UGC NET</p>
-  </section>
+    <!-- Awards Section -->
+    <section id="awards" class="awards">
+        <div class="container">
+            <h2 class="section-title">Awards & Recognition</h2>
+            <div class="awards-grid">
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>SERB International Travel Grant</h3>
+                        <p class="award-year">2024</p>
+                        <p class="award-description">Awarded travel grant for research collaboration in USA by Science and Engineering Research Board (SERB)</p>
+                    </div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>Best Paper Presentation Award</h3>
+                        <p class="award-year">2024</p>
+                        <p class="award-description">Recognition for outstanding research presentation at national/international conference</p>
+                    </div>
+                </div>
+                
+                <div class="award-item">
+                    <div class="award-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <div class="award-content">
+                        <h3>UGC NET Qualified</h3>
+                        <p class="award-year">2018</p>
+                        <p class="award-description">National Eligibility Test qualification in Environmental Science by University Grants Commission</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="media">
-    <h2>Media</h2>
-    <p>Featured interviews, news articles, and conference presentations will be listed here.</p>
-  </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">R</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Google Colab</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Statistical Software</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">SPSS</span>
+                        <span class="skill-tag">Origin</span>
+                        <span class="skill-tag">Tableau</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-globe"></i> Geospatial Software</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Google Earth Engine</span>
+                        <span class="skill-tag">ArcGIS & ArcGIS Pro</span>
+                        <span class="skill-tag">QGIS</span>
+                        <span class="skill-tag">SNAP</span>
+                        <span class="skill-tag">ERDAS Imagine</span>
+                        <span class="skill-tag">ENVI</span>
+                        <span class="skill-tag">LIDAR-360</span>
+                        <span class="skill-tag">TerrSet</span>
+                        <span class="skill-tag">eCognition</span>
+                        <span class="skill-tag">Maxent Model</span>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-desktop"></i> Computer Skills</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Microsoft Office</span>
+                        <span class="skill-tag">LibreOffice</span>
+                        <span class="skill-tag">LaTeX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="profiles">
-    <h2>Research Profiles</h2>
-    <ul>
-      <li><a href="https://scholar.google.com/citations?user=jKr7UfwAAAAJhl=en" target="_blank">Google Scholar</a></li>
-      <li><a href="https://www.researchgate.net/profile/Alok-Raj" target="_blank">ResearchGate</a></li>
-      <li><a href="https://independent.academia.edu/AlokRaj67" target="_blank">Academia</a></li>
-      <li><a href="https://orcid.org/0000-0001-6198-1701" target="_blank">ORCID</a></li>
-    </ul>
-  </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>alokraj3300@yahoo.com</p>
+                            <p>alokraj3300@live.in</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 8083505398</p>
+                            <p>(WhatsApp/Calling)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>SLCR Lab, Department of Civil Engineering</p>
+                            <p>IIT BHU, Varanasi</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Curriculum Vitae</h3>
+                            <a href="assets/cv.pdf" download class="cv-download-btn">
+                                <i class="fas fa-file-pdf"></i> Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Dr. Alok Raj | Academic Website</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2024 Dr. Alok Raj. All rights reserved.</p>
+                    <p>Postdoctoral Young Professional | Environmental Science Researcher</p>
+                </div>
+                <div class="footer-social">
+                    <a href="mailto:alokraj3300@yahoo.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+918083505398" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
