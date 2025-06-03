@@ -1012,8 +1012,8 @@ a:hover {
 
 /* Footer */
 .footer {
-    background: hsl(var(--text-primary));
-    color: hsl(var(--background-primary));
+    background: hsl(var(--background-secondary));
+    color: hsl(var(--text-primary));
     padding: var(--space-lg) 0;
 }
 
@@ -1041,15 +1041,15 @@ a:hover {
     justify-content: center;
     width: 40px;
     height: 40px;
-    background: hsla(var(--background-primary) / 0.1);
+    background: hsla(var(--primary-color) / 0.1);
     border-radius: 50%;
-    color: hsl(var(--background-primary));
+    color: hsl(var(--primary-color));
     transition: all var(--transition-fast);
 }
 
 .footer-social a:hover {
     background: hsl(var(--primary-color));
-    transform: translateY(-2px);
+    color: #fff;
 }
 
 /* Back to Top Button */
@@ -1325,19 +1325,5 @@ a:hover {
         --background-primary: 0 0% 100%;
         --background-secondary: 0 0% 95%;
         --border-color: 0 0% 50%;
-    }
-}
-
-/* Dark Mode Support */
-@media (prefers-color-scheme: dark) {
-    :root {
-        --primary-color: 220 100% 60%;
-        --text-primary: 210 11% 90%;
-        --text-secondary: 210 11% 80%;
-        --text-muted: 210 11% 65%;
-        --background-primary: 210 11% 8%;
-        --background-secondary: 210 11% 12%;
-        --background-tertiary: 210 11% 16%;
-        --border-color: 210 11% 25%;
     }
 }
